@@ -1,0 +1,26 @@
+/* флекс эксперименты */
+.container_image {
+    /* flex:content; */
+    /* display: inline-table;  */
+    display: flex;
+    flex-wrap: wrap;
+    background: #c7c7c7;
+}
+
+.simple_image {
+    flex: 1;
+    display: table-caption;
+}
+
+.main {
+    flex: 2;
+}
+
+.simple_image1 {
+    flex: 4;
+    display: table-caption;
+}
+
+.main1 {
+    flex: 3;
+}

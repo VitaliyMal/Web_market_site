@@ -1,0 +1,82 @@
+/* Слайдер */
+.sliderB {
+    position: relative;
+    max-width: 100%;
+    height:fit-content;
+    overflow: hidden;
+}
+
+.slidesB {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slideB {
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* Добавлено для позиционирования текста */
+}
+
+.slideB img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    /* Делает элемент текстовым наложением */
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Тень для текста для лучшей читаемости */
+}
+
+.prevB, .nextB {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+} 
+
+.prevB {
+    left: 10px;
+}
+
+.nextB {
+    right: 10px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}

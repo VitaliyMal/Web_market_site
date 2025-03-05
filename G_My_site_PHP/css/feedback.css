@@ -1,0 +1,75 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Контейнер формы */
+.feedback-container {
+    max-width: 600px;
+    margin: 80px auto; /* Добавляем отступ от header */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Заголовок */
+.feedback-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Поля формы */
+.feedback-container form input[type="text"],
+.feedback-container form input[type="email"],
+.feedback-container form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+    box-sizing: border-box;
+    resize: vertical; /* Разрешаем изменение размера только по вертикали */
+}
+
+/* Эффект фокуса */
+.feedback-container form input:focus,
+.feedback-container form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+/* Кнопка отправки */
+.feedback-container form button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feedback-container form button:hover {
+    background: #0056b3;
+}
+
+/* Для адаптивности */
+@media (max-width: 768px) {
+    .feedback-container {
+        width: 90%;
+    }
+}

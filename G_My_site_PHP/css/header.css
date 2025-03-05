@@ -1,0 +1,128 @@
+/* стили хэдера */
+#header_conteiner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient( #cee3f8, white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.menu_header {
+    width: 100px;
+    height: 50px;
+    border: 0px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo_header {
+    width: 150px;
+    height: 150px;
+    border: 0px solid red;
+    padding-left: 400px;
+}
+
+#box_buttons ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    border: 0px solid blue;
+}
+
+
+
+#box_buttons ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    transition: all 0.3s;
+}
+
+#box_buttons ul li a:hover {
+    transform: scale(1.15);
+}
+
+#nav_box {
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-top: 175px;
+    list-style: none;
+    border: 0px solid black;
+}
+
+.nav_panel ul {
+    display: flex;
+    justify-content: center;
+    /* Центрирование по горизонтали */
+    list-style: none;
+    /* Удаление точек */
+}
+
+.nav_panel a {
+    display: inline-block;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: transparent;
+    /* Прозрачный фон */
+    border: none;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    transition: color 0.3s;
+    /* Плавное изменение цвета текста */
+}
+
+.nav_panel a:hover {
+    color: blue;
+    /* Изменение цвета текста при наведении */
+}
+
+/*
+  .logo rect,
+  .logo text {
+    transition: 0.3s ease-out;
+  }
+  
+  .logo:hover rect,
+  .logo:hover text {
+    fill: #4a7def;
+  } */
+
+
+.buttons_icon .duotone_twee,
+.buttons_icon .duotone_een,
+.buttons_icon .favorite_icon,
+.buttons_icon .favorite_icon_eyes,
+.buttons_icon .cart_icon,
+.buttons_icon .cart_icon1,
+.buttons_icon .avatar_icon {
+    transition: 0.3s ease-out;
+}
+
+.buttons_icon:hover .duotone_twee,
+.buttons_icon:hover .favorite_icon,
+.buttons_icon:hover .cart_icon,
+.buttons_icon:hover .avatar_icon {
+    fill: #4a7def;
+}
+
+.buttons_icon:hover .favorite_icon_eyes,
+.buttons_icon:hover .duotone_een,
+.buttons_icon:hover .cart_icon1 {
+    fill: red;
+}
+

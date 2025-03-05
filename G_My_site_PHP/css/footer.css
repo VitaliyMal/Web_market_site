@@ -1,0 +1,67 @@
+/* Современные стили для футера */
+footer {
+    background-color: #222; /* Темный фон для современного вида */
+    color: #fff; /* Белый текст для контраста */
+    padding: 40px 20px; /* Увеличенные отступы для удобного восприятия */
+    text-align: center; /* Центрирование текста */
+    position: relative; /* Для возможных вложенных элементов */
+}
+
+footer .container {
+    max-width: 1200px; /* Ограничение ширины для удобства чтения */
+    margin: 0 auto; /* Выравнивание по центру */
+    display: flex; /* Flexbox для размещения элементов */
+    flex-wrap: wrap; /* Перенос на новые строки для адаптивности */
+    justify-content: space-between; /* Равномерное распределение пространства */
+    align-items: center; /* Вертикальное центрирование */
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 15px; /* Расстояние между иконками */
+}
+
+footer .social-icons a {
+    color: #fff; /* Белый цвет для иконок */
+    font-size: 24px; /* Увеличенный размер иконок */
+    transition: color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+footer .social-icons a:hover {
+    color: #1e90ff; /* Яркий цвет при наведении */
+}
+
+footer .links {
+    display: flex;
+    gap: 20px; /* Пространство между ссылками */
+    flex-wrap: wrap; /* Перенос ссылок на новые строки */
+    justify-content: center; /* Центрирование ссылок */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+footer .links a {
+    color: #fff; /* Белый текст */
+    text-decoration: none; /* Удаление подчеркивания */
+    font-size: 16px; /* Размер текста */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+footer .links a:hover {
+    color: #1e90ff; /* Яркий цвет при наведении */
+}
+
+footer .copyright {
+    margin-top: 30px; /* Отступ сверху */
+    font-size: 14px; /* Меньший размер текста */
+    color: #aaa; /* Светло-серый цвет для ненавязчивости */
+}
+
+footer .contacts {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+footer .contacts p {
+    margin: 5px 0;
+}
